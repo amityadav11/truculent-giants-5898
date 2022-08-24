@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    position: sticky;
+    top: -51px;
+    background-color: black;
+}
+#header_container{
+    width: 100%;
+    height: 69px;
+}
+#header_container>#logo>a>img{
+    width: 85px;
+    height: 38.5px;
+    border: 2px solid red;
+}
+
+#header_container>div:nth-child(2){
+    justify-content: center;
+} */
+#linklist_title_shop,#linklist_title_more{
+    display: inline-block;
+}
+#linklist_title_shop:hover,.linklist_title_offerZone:hover,#linklist_title_more:hover{
+    text-decoration: underline;
+}
+.linklist_title_offerZone{
+    margin-left: 40px;
+    margin-right: 40px;
+}
