@@ -4,30 +4,299 @@
     box-sizing: border-box;
 }
 #navbar{
-    position: sticky;
-    top: -51px;
     background-color: black;
 }
-#header_container{
+/* Navbar container */
+#navbar_container{
     width: 100%;
     height: 69px;
 }
-#header_container>#logo>a>img{
-    width: 85px;
-    height: 38.5px;
+/* Navbar wrapper with 12px padding */
+#navbar_container>#wrapper{
+    width: 90%;
+     height: 69px;
+     padding: 12px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     border: 2px solid red;
 }
-
-#header_container>div:nth-child(2){
-    justify-content: center;
-} */
-#linklist_title_shop,#linklist_title_more{
-    display: inline-block;
+#navbar_container>#wrapper>#logo>a>img{
+    width: 85px;
+    height: 38.5px;
+   
 }
-#linklist_title_shop:hover,.linklist_title_offerZone:hover,#linklist_title_more:hover{
+#main_menu{
+    width: 366.217px;
+    height:22.5;
+    border: 2px solid green;
+}
+#navbar_container>#wrapper>#main_menu>a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    display:inline-block;
+    margin-top: 10px;
+    margin-left: 21px;
+   
+    border: 2px solid red;
+}
+#navbar_container>#wrapper>#main_menu>a:hover{
     text-decoration: underline;
 }
-.linklist_title_offerZone{
-    margin-left: 40px;
-    margin-right: 40px;
+#topRight_nav{
+    width: 352.433px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 2px solid pink;
+}
+
+#topRight_nav input{
+    width: 245px;
+    height: 35px;
+    border-radius: 2em;
+    outline:0;
+    border: 0;
+    font-size: 16px;
+    padding:  11px 35px;;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    color: #212529;
+    font-family: Montserrat;
+    background: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png') no-repeat 8px 9px white;
+    background-size: 15px 15px;
+    /* background-repeat: no-repeat; */
+    /* Show image once: no-repeat
+    Distance from left: 97.25%
+    Distance from top: 10px
+    Background color: white
+    border: 2px solid yellow; */
+}
+
+#topRight_nav>.user>img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 2px solid rgb(252, 17, 181);
+}
+#topRight_nav>.user>a>img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(252, 17, 181);
+}
+
+/* Circle for making floating counter */
+.user p{
+    right: 93px;
+    margin-left: 0;
+    position: absolute;
+    top: 41px;
+    font-size: 9px;
+    height: 21px;
+    width: 21px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #ff0000;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.announcement_bar{
+    width: 100%;
+    height: 34.8;
+    background-color: #ff0000;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.announcement_bar>a{
+    text-decoration:none;
+    color: white;
+    /* border: 2px solid purple; */
+}
+
+
+/* Responsive design */
+
+@media all and (min-width: 997px) and (max-width: 1185px){
+    .user p{
+        right: 70px;
+        margin-left: 0;
+        position: absolute;
+        top: 41px;
+        font-size: 9px;
+        height: 21px;
+        width: 21px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #ff0000;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+}
+
+@media all and (min-width: 940px) and (max-width: 996px) {
+    .user p{
+        right: 60px;
+        margin-left: 0;
+        position: absolute;
+        top: 41px;
+        font-size: 9px;
+        height: 21px;
+        width: 21px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #ff0000;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+}
+
+@media all and (min-width: 451px) and (max-width: 939px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #navbar{
+        background-color: black;
+    }
+    /* Navbar container */
+    #navbar_container{
+        width: 100%;
+        height: 120px;
+    }
+    /* Navbar wrapper with 12px padding */
+    #navbar_container>#wrapper{
+        width: 90%;
+         height: 69px;
+         padding: 12px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid red;
+    }
+    #navbar_container>#wrapper>#logo>a>img{
+        width: 85px;
+        height: 38.5px;
+       
+    }
+    #main_menu{
+        display: none;
+        border: 2px solid green;
+    }
+    #navbar_container>#wrapper>#main_menu>a{
+        text-decoration:none;
+        color: rgb(255, 255, 255);
+        margin: auto;
+        display:inline-block;
+        margin-top: 10px;
+        margin-left: 21px;
+       
+        border: 2px solid red;
+    }
+    #navbar_container>#wrapper>#main_menu>a:hover{
+        text-decoration: underline;
+    }
+    #topRight_nav{
+        width: 100%;
+        height: 45px;
+        border: 2px solid pink;
+    }
+    #topRight_nav>.search_img{
+        margin-top: 110px;
+        width: 100%;
+        display: block;
+    }
+    
+    #topRight_nav input{
+        width: 100%;
+        height: 35px;
+        margin-right: 0px;
+        border-radius: 2em;
+        outline:0;
+        border: 0;
+        font-size: 16px;
+        padding:  11px 35px;;
+        font-weight: 500;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        color: #212529;
+        font-family: Montserrat;
+        background: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png') no-repeat 8px 9px white;
+        background-size: 15px 15px;
+        /* background-repeat: no-repeat; */
+        /* Show image once: no-repeat
+        Distance from left: 97.25%
+        Distance from top: 10px
+        Background color: white
+        border: 2px solid yellow; */
+    }
+    .user{
+        width: 200px;
+        height: 45px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #topRight_nav>.user>#user_icon{
+        width: 30px;
+        height: 30px;
+       
+        border: 2px solid rgb(252, 17, 181);
+    }
+    #topRight_nav>.user>#cart_icon{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid rgb(17, 252, 36);
+    }
+    #topRight_nav>.user>a>img{
+        width: 30px;
+        height: 30px;
+        
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid rgb(234, 236, 82);
+    }
+    
+    /* Circle for making floating counter */
+    .user p{
+        right: 50px;
+        margin-left:70;
+        top: 41px;
+        font-size: 9px;
+        height: 21px;
+        width: 21px;
+        position: absolute;
+        color: white;
+        background-color: #ff0000;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+    .announcement_bar{
+        width: 100%;
+        height: 34.8;
+        background-color: #ff0000;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .announcement_bar>a{
+        text-decoration:none;
+        color: white;
+        /* border: 2px solid purple; */
+    }
 }
