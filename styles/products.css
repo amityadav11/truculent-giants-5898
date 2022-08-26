@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* grid layout with setting image */
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,346px);
+    gap:20px 20px;
+  
+}
+.column{
+margin: auto;
+padding: 7px;
+background-color:#e1e1ec;
+    
+height: auto;
+border-radius: 10px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.column>img:hover{
+    cursor: pointer;
+}
+.column>img{
+    height: 250px;
+    width: 250px;
+}
+/* Hovering effect */
+.column {
+    float: left;
+    /* width: 25%; */
+    
+    padding: 0px;
+    position: relative;
+}
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hover-img {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.column:hover img+img {
+    display: block;
+}
+
+/* setting cards and products discription */
+
+.save{
+    width: 55px;
+    height: 30px;
+    padding: 5px;
+    font-size:  12px;
+    font-weight: 800;
+    text-align: right;
+    color: rgb(14, 11, 11);
+    background-color: #ffc107;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.innerData{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    padding: 9px;
+    border-radius: 10px;
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+    border: 2px solid red;
+}
+h4{
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.innerData>img{
+    margin-top: 0px;
+    width: 13px;
+    height: 13px;
+    
+}
+.innerData>div>img{
+    margin-top: 0px;
+     width: 20px;
+    height: 20px;
+    
+}
+.innerData>div>p{
+    margin-top: 0px;
+    margin-top: 0px;
+    font-size: 12px;
+    color: black;
+    
+}
+.row2{
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+    gap: 10px;
+}
+.row2>div:nth-child(1){
+    color: red;
+    font-weight: bold;
+}
+.row2>div:nth-child(2){
+    text-decoration: line-through;
+    color: #212529;
+}
+.row3{
+    margin-top: 10px;
+    font-size: 13px;
+}
+#cartbutton{
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    height: 32px;
+    padding: 8px 0px 8px 0px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+   
+}
+.icon{
+    width: 10px;
+    height: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: -13px;
+    
+}
+
