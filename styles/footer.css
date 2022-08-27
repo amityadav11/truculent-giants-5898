@@ -1,0 +1,165 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.text-stroke {
+    -webkit-text-stroke: 1px white;
+    font-weight: 700;
+   
+}
+
+.text-white {
+    color: #fff;
+    font-weight: 700;
+    
+}
+.topSection{
+    height: 85px;
+    background-color: rgb(28,28,28);
+    color: white;
+}
+.topSection > div{
+    width: 60%;
+    justify-content: space-around;
+    display: flex;
+        margin: auto;
+    height: 85px;
+}
+.topSection > div > div{
+    align-items: center;
+    width: 21%;
+    display: flex;
+        justify-content: space-between;
+    
+  
+}
+.midLightSection{
+    height: 80px;
+    background-color: rgb(44,44,44);
+    color: rgb(143,143,143);
+}
+.midLightSection > p{
+    padding-top: 15px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.bottomSection{
+    height: 600px;
+    background-color: #000;
+    margin: auto;
+    padding-top: 50px;
+}
+.bottomDark{
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: 32% 60%;
+grid-template-rows: 400px;
+grid-gap: 5%;
+}
+
+.bottomDark > div > div > input{
+width:210px; 
+margin-right: 10px; 
+height: 37px;
+background-color: transparent;
+border: 1px solid rgb(144,144,144);
+outline: 0px;
+color:rgb(144,144,144);
+padding-left: 10px;
+color: rgb(144,144,144);
+border-radius: 3px;
+}
+.bottomDark > div > div > button{
+color: white;
+font-weight: bold;
+border-radius: 3px;
+width: 36%;
+background-color: transparent;
+border: 1px solid red;
+}
+.bottomDark > div > div > button:hover{
+  background-color: red;
+}
+.bottomDark > div > img{
+height: 50px; 
+margin-bottom: 35px;
+}
+.bottomDark > div  >p{
+color: rgb(144,144,144); 
+font-size: 17px;
+padding-right: 18px;
+}
+.contentList{
+  display: flex;
+    justify-content: space-around;
+}
+.contentList > div{
+  width: 30%;
+  justify-content: space-around;
+}
+.contentList li,h3{
+  color: rgb(144,144,144);
+  padding: 4px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.contentList h3{
+  color: white;
+  margin-bottom: 15px;
+
+}
+.color-icon{
+ color:white;
+ font-size: 30px;
+ cursor: pointer;
+
+}
+
+.bottomExtreme{
+display: flex;
+ width: 15%;
+ margin-top: 20px; 
+ justify-content: space-between;
+ margin-left: 10%; 
+}
+.bottomExtreme>a:hover{
+padding: 10px 10px 10px 10px;
+background-color: red;
+}
+.bottomExtreme~div{
+display: flex; 
+width: 80%; 
+justify-content: space-between;
+margin: auto;
+margin-top: 20px;
+}
+.bottomExtreme~div~p{
+color: white;
+text-align: center;
+ margin-top: 25px;
+}
+
+.bottomExtreme~div>div{
+display:flex;
+height: 60px;
+width: 50%;
+}
+
+.bottomExtreme~div>div>h3{
+
+color: white; 
+margin-top: 15px;
+font-size: 18px;
+cursor: default;
+}
+
+.bottomExtreme~div>div>a{
+margin-left: 2%;
+}
+
+.firstLightBlack h3{
+  color: white;
+}
