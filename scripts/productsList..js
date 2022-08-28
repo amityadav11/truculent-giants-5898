@@ -1,5 +1,4 @@
-
-
+// let dataProducts = JSON.parse(localStorage.getItem("productsData"))
 
 function display(data) {
   document.querySelector(".rowData").innerHTML = null;
