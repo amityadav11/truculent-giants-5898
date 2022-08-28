@@ -19,7 +19,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 #navbar_container>#wrapper>#logo>a>img{
     width: 85px;
@@ -29,7 +29,7 @@
 #main_menu{
     width: 366.217px;
     height:22.5;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 #navbar_container>#wrapper>#main_menu>a{
     text-decoration:none;
@@ -39,7 +39,7 @@
     margin-top: 10px;
     margin-left: 21px;
    
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 #navbar_container>#wrapper>#main_menu>a:hover{
     text-decoration: underline;
@@ -49,7 +49,7 @@
     height: 45px;
     display: flex;
     align-items: center;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 
 #topRight_nav input{
@@ -79,12 +79,12 @@
     width: 30px;
     height: 30px;
     position: relative;
-    border: 2px solid rgb(252, 17, 181);
+    /* border: 2px solid rgb(252, 17, 181); */
 }
 #topRight_nav>.user>a>img{
     width: 30px;
     height: 30px;
-    border: 2px solid rgb(252, 17, 181);
+    /* border: 2px solid rgb(252, 17, 181); */
 }
 
 /* Circle for making floating counter */

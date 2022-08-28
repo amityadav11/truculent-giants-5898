@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <h1 id="head">Total Cart Value:<span id="total-price">0</span></h1>
+
+    <div id="container"></div>
+</body>
+
+<script>
+
+     let container = document.getElementById("container");
+    
+    let totalPrice = document.getElementById("total-price");
+     //getItem for cart
+     let cartLS = JSON.parse(localStorage.getItem("cartsData")) || [];
+           console.log(cartLS);
+    function Display(product_data){
+
+        container.innerHTML =""; 
+
+        let total = 0;
+
+     product_data.forEach(function(ele,index){
+  
+                total+=Number(ele.price);
+            let product = document.createElement("div");
+
+                let img = document.createElement("img");
+                img.src =ele.image;
+
+                let name = document.createElement("h1");
+                name.textContent = ele.brand
+
+                let price = document.createElement("h2");
+                price.textContent=ele.price;
+
+                let category=document.createElement("p");
+                category.textContent = ele.category;
+                 //create button element
+                let deleteBtn = document.createElement("button");
+                deleteBtn.textContent="Delete"; 
+                  //addEventListener for click and call the cart function
+                  deleteBtn.addEventListener("click",function(){
+                    DeleteCart(index);
+                })
+
+                product.append(img,name,price,category,deleteBtn);
+         
+        
+                container.append(product);  
+     });
+   totalPrice.textContent=total;
+   }
+    Display(cartLS);
+    function DeleteCart(index){
+       let deletedCart=  cartLS.filter(function(el,i){
+
+          return i != index;
+         })
+         Display(deletedCart);
+
+         localStorage.setItem("cartsData",JSON.stringify(deletedCart));
+    }
+    
+</script>
+</html>

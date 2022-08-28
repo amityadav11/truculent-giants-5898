@@ -1,0 +1,31 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+}
+#head{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+#container div img {
+    margin-left: 100px;
+    width: 327.8px;
+    height: 245.4px;
+    background-color: #e3e3e3;
+}
+#container h1,h2,p{
+    color: white;
+    margin: 10px 10px;
+    margin-left: 100px;
+}
+#container button {
+    width: 70px;
+    height: 30px;
+    color: white;
+    margin: 10px 10px 10px 100px;
+    background-color: #FF1A1E;
+}
