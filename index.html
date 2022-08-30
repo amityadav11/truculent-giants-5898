@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/slideShow.css">
     <link rel="stylesheet" href="styles/productsList.css">
     <link rel="stylesheet" href="styles/footer.css">
+   
 </head>
 
 <body>
@@ -35,13 +36,13 @@
                     </a>
                 </div>
                 <div id="main_menu">
-                    <a id="shop" href="#">Shop
+                    <a id="shop" href="./products.html">Shop
                         <svg class="rotation" focusable="false" width="7" height="10" viewBox="0 0 7 10">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
                                 fill="currentColor"></path>
                         </svg>
                     </a>
-                    <a id="daily_deal" href="#">Daily Deals</a>
+                    <a id="daily_deal" href="./products.html">Daily Deals</a>
                     <a class="offer" href="./offerPage.html">Offer Zone</a>
                     <a id="more" href="#">More
                         <svg class="rotation" focusable="false" width="7" height="10" viewBox="0 0 7 10">
@@ -53,15 +54,19 @@
                 <div id="topRight_nav">
                     <div class="search_img">
                         <input id="search" type="search" placeholder="Search...">
+                        <div id="container1"></div>
                     </div>
                     <div class="user">
-                        <img id="user_icon" src="images\navigation-Icon4.webp" alt="user">
+                        <a href="./login.html">
+                            <img id="user_icon" src="images\navigation-Icon4.webp" alt="user">
+                        </a>
                         <a src="../offerPage.html">
                             <img src="images\gift.webp" alt="gift">
                         </a>
                         <a href="./cart.html">
                             <img id="cart_icon" src="images\navigation-Icon-3.webp" alt="cart">
                             <p id="cart_counter">0</p>
+                           
                         </a>
                     </div>
                 </div>
@@ -228,3 +233,4 @@
 
 <script src="scripts/index.js"></script>
 <script src="scripts/productsList..js"></script>
+<script src="scripts/navbar.js"></script>

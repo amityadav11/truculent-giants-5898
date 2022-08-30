@@ -1,4 +1,4 @@
-// let dataProducts = JSON.parse(localStorage.getItem("productsData"))
+ let dataProducts = JSON.parse(localStorage.getItem("productsData"))
 
 
 function display(data) {
