@@ -69,3 +69,10 @@ body{
     font-size: 17px;
     color: #ffffff;
 }
+.displayBadge{
+    margin-top: 2%; 
+    margin-left: 0;
+    display: none; 
+    text-align :center;
+    font-size: 9px;
+}

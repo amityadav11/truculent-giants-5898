@@ -23,9 +23,12 @@
         <input type="email" id="email" placeholder="E-mail">
 
 
-        <input type="password" id="password" placeholder="Password" title="Password must be 8 characters including 1 uppercase letter, 1 lowercase letter and numeric characters"
-            required 
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <br>
+        <input type="password" placeholder="Type your password" id="PassEntry" id="password" class="form-control passwordInput">
+        <br>
+        <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+        <br>
+        <!-- <input type="password" id="password" placeholder="Password"> -->
 
         <div id="signbutton" onclick="createAccount()">CREATE ACCOUNT</div>
         <p onclick="gologin()"> Already have an account? Login</p>
@@ -34,3 +37,4 @@
 
 </html>
 <script src="scripts/signUp.js"></script>
+<script src="scripts/password.js"></script>
